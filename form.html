@@ -1,0 +1,54 @@
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<form id="contactform" name="contactform" class="default-form contact-form" action="send_form_email.php" method="post" autocomplete="off"> 
+                    <div class="col-md-6">
+                        <input class="form-control input-box" id="name" type="text" name="Name" placeholder="Your Name">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input class="form-control input-box" id="email" type="email" name="Email" placeholder="Your Email">
+                    </div>
+                    
+                       <div class="col-md-6">
+                        <input class="form-control input-box" id="subject" type="text" name="Phone_Number" placeholder="Phone Number">
+                
+                    </div> 
+                    <div class="col-sm-6">
+                                    <div class="">
+                                        <select class="form-control input-box" name="specialty" id="specialty" data-bv-field="specialty">
+                                            <option selected="">Select Specialty</option>
+                                            
+                                            <optgroup label="Product Specialties">
+                                                <option value="Affinity Solutions">Autocomp</option>
+                                                <option value="Aviation &amp; Space">Chemical & Fertilisers</option>
+                                                <option value="Construction &amp; Infrastructure">IT/ITes</option>
+                                                <option value="Global Network Business">Ports& Terminals </option>
+                                                <option value="Liability">Professional Services</option>
+                                                <option value="Marine">Hospitality </option>
+                                                
+                                            </optgroup> 
+                                        </select>
+                                        <span class="errorSpecialty has-error"><small class="help-block" data-bv-validator="notEmpty" data-bv-for="specialty" data-bv-result="VALID" style="display: none;">The specialty is required and cannot be empty</small></span>
+                                    </div>
+                                </div>
+                     
+                      <div class="col-md-12">
+                        <input class="form-control input-box" id="subject" type="text" name="Location" placeholder="Location">
+                
+                    </div> 
+
+                    <div class="col-md-12">
+                      <textarea class="form-control" id="Message" name="Message" rows="3" placeholder="Message"></textarea>
+                    </div>  
+
+                    <button class="btn btn-default" type="submit" id="submit" name="submit" data-style="expand-left">Send Message</button>
+
+                </form>
+                <!-- /END FORM -->
+</body>
+</html>
+
